@@ -1,0 +1,8 @@
+Name,Code,Category,Brand,Barcode Symbol,Product Cost,Product Price,Product Unit,Sale Unit,Purchase Unit,Stock Alert,Order Tax,Tax Type,Notes,Warehouse,Supplier,Quantity,Status,Variation Name,Variation Type Name
+Regular Product,REG001,Electronics,Samsung,CODE128,100,120,piece,piece,piece,10,10,exclusive,Regular product without variations,Warehouse,Alex Rider,50,received,,
+T-Shirt,TSHIRT001,Clothing,Nike,CODE128,20,35,piece,piece,piece,5,5,inclusive,Cotton T-Shirt with size variations,Warehouse,Alex Rider,10,received,Size,Small
+T-Shirt,TSHIRT002,Clothing,Nike,CODE128,20,35,piece,piece,piece,5,5,inclusive,Cotton T-Shirt with size variations,Warehouse,Alex Rider,15,received,Size,Medium
+T-Shirt,TSHIRT003,Clothing,Nike,CODE128,20,35,piece,piece,piece,5,5,inclusive,Cotton T-Shirt with size variations,Warehouse,Alex Rider,20,received,Size,Large
+Phone Case,CASE001,Electronics,Generic,CODE128,5,15,piece,piece,piece,20,8,exclusive,Phone case with color variations,Warehouse,Alex Rider,30,received,Color,Red
+Phone Case,CASE002,Electronics,Generic,CODE128,5,15,piece,piece,piece,20,8,exclusive,Phone case with color variations,Warehouse,Alex Rider,25,received,Color,Blue
+Phone Case,CASE003,Electronics,Generic,CODE128,5,15,piece,piece,piece,20,8,exclusive,Phone case with color variations,Warehouse,Alex Rider,35,received,Color,Black

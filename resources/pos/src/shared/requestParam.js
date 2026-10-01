@@ -1,0 +1,164 @@
+import { Filters } from "../constants";
+
+export default (
+    filters = Filters.OBJ,
+    admin = false,
+    stockReport,
+    isProductQuantity,
+    baseUrl = "?",
+    createdAt = true
+) => {
+    let url = baseUrl.indexOf("?") > 0 ? "" : "?";
+
+    if (filters.order_By !== "") {
+        if (baseUrl.indexOf("?") > 0 || (url.includes("?") && url.length > 1)) {
+            url += "&";
+        }
+        if (filters.direction === "asc") {
+            url = url + "sort=" + filters.order_By;
+        } else if (filters.direction === "desc") {
+            url = url + "sort=" + "-" + filters.order_By;
+        }
+    }
+    if (filters.order_By === "" && createdAt) {
+        if (isProductQuantity) {
+        } else {
+            if (
+                baseUrl.indexOf("?") > 0 ||
+                (url.includes("?") && url.length > 1)
+            ) {
+                url += "&";
+            }
+            url = url + "sort=" + "-" + filters.created_at;
+        }
+    }
+    if (filters.pageSize > 0) {
+        if (baseUrl.indexOf("?") > 0 || (url.includes("?") && url.length > 1)) {
+            url += "&";
+        }
+        url = url + "page[size]=" + filters.pageSize;
+    }
+    if (filters.page > 0) {
+        if (baseUrl.indexOf("?") > 0 || (url.includes("?") && url.length > 1)) {
+            url += "&";
+        }
+        url = url + "page[number]=" + filters.page;
+    }
+    if (filters.search) {
+        if (baseUrl.indexOf("?") > 0 || (url.includes("?") && url.length > 1)) {
+            url += "&";
+        }
+        url += "filter[search]=" + filters.search;
+    }
+    if (stockReport) {
+        if (filters.search !== "") {
+            if (
+                baseUrl.indexOf("?") > 0 ||
+                (url.includes("?") && url.length > 1)
+            ) {
+                url += "&";
+            }
+            url += "search=" + filters.search;
+        }
+    }
+
+    if (filters.start_date && filters.end_date) {
+        if (baseUrl.indexOf("?") > 0 || (url.includes("?") && url.length > 1)) {
+            url += "&";
+        }
+        url =
+            url +
+            "start_date=" +
+            filters.start_date +
+            "&end_date=" +
+            filters.end_date;
+    }
+
+    if (filters.status) {
+        if (baseUrl.indexOf("?") > 0 || (url.includes("?") && url.length > 1)) {
+            url += "&";
+        }
+        url =
+            url +
+            "status=" +
+            filters.status;
+    }
+
+    if (filters.payment_status) {
+        if (baseUrl.indexOf("?") > 0 || (url.includes("?") && url.length > 1)) {
+            url += "&";
+        }
+        url = url + "payment_status=" + filters.payment_status;
+    }
+
+    if (filters.payment_type) {
+        if (baseUrl.indexOf("?") > 0 || (url.includes("?") && url.length > 1)) {
+            url += "&";
+        }
+        url = url + "payment_type=" + filters.payment_type;
+    }
+
+    if (filters.plan_type) {
+        if (baseUrl.indexOf("?") > 0 || (url.includes("?") && url.length > 1)) {
+            url += "&";
+        }
+        url = url + "plan_type=" + filters.plan_type;
+    }
+
+    if (filters.plan_id) {
+        if (baseUrl.indexOf("?") > 0 || (url.includes("?") && url.length > 1)) {
+            url += "&";
+        }
+        url = url + "plan_id=" + filters.plan_id;
+    }
+
+    if (filters.product_unit) {
+        if (baseUrl.indexOf("?") > 0 || (url.includes("?") && url.length > 1)) {
+            url += "&";
+        }
+        url = url + "product_unit=" + filters.product_unit;
+    }
+    if (filters.base_unit) {
+        if (baseUrl.indexOf("?") > 0 || (url.includes("?") && url.length > 1)) {
+            url += "&";
+        }
+        url = url + "base_unit=" + filters.base_unit;
+    }
+    if (filters.warehouse_id) {
+        if (baseUrl.indexOf("?") > 0 || (url.includes("?") && url.length > 1)) {
+            url += "&";
+        }
+        url = url + "warehouse_id=" + filters.warehouse_id;
+    }
+    if (filters.customer_id) {
+        if (baseUrl.indexOf("?") > 0 || (url.includes("?") && url.length > 1)) {
+            url += "&";
+        }
+        url = url + "customer_id=" + filters.customer_id;
+    }
+    if (filters.user_id) {
+        if (baseUrl.indexOf("?") > 0 || (url.includes("?") && url.length > 1)) {
+            url += "&";
+        }
+        url = url + "user_id=" + filters.user_id;
+    }
+    if (filters.product_category_id) {
+        if (baseUrl.indexOf("?") > 0 || (url.includes("?") && url.length > 1)) {
+            url += "&";
+        }
+        url = url + "product_category_id=" + filters.product_category_id;
+    }
+    if (filters.brand_id) {
+        if (baseUrl.indexOf("?") > 0 || (url.includes("?") && url.length > 1)) {
+            url += "&";
+        }
+        url = url + "brand_id=" + filters.brand_id;
+    }
+    if (admin) {
+        if (baseUrl.indexOf("?") > 0 || (url.includes("?") && url.length > 1)) {
+            url += "&";
+        }
+        url += "name=" + filters.adminName;
+    }
+    return url;
+};
