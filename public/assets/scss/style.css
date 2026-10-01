@@ -1,0 +1,539 @@
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url("../fonts/Poppins-Regular.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+    src: url("../fonts/Poppins-Medium.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+    src: url("../fonts/Poppins-SemiBold.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+    src: url("../fonts/Poppins-Bold.ttf") format("truetype")
+}
+
+.accordion-open {
+    box-shadow: 0px 10px 24px 0px rgba(134, 53, 253, .1019607843) !important
+}
+
+.accordion-open .accordion-header {
+    padding-bottom: 16px !important;
+}
+
+.meet-slider {
+    margin-bottom: 46px !important;
+    margin: 0 -10px
+}
+
+@media(max-width: 1024px) {
+    .meet-slider {
+        margin-bottom: 30px !important
+    }
+}
+
+.meet-slider .slick-slide {
+    padding: 0 10px
+}
+
+.meet-slider .slick-next,
+.meet-slider .slick-prev {
+    top: 44%;
+    border: 1px solid #ffffff
+}
+
+.meet-slider .slick-next:hover,
+.meet-slider .slick-prev:hover {
+    border: 1px solid #8635fd;
+    background-color: #fff !important
+}
+
+.meet-slider .slick-next:hover svg path,
+.meet-slider .slick-prev:hover svg path {
+    fill: #8635fd !important;
+    stroke: #8635fd !important
+}
+
+.meet-slider .slick-next svg,
+.meet-slider .slick-prev svg {
+    width: 12px;
+    height: 20px
+}
+
+.meet-slider .slick-next svg path,
+.meet-slider .slick-prev svg path {
+    fill: #fff
+}
+
+.meet-slider .slick-next::before,
+.meet-slider .slick-prev::before {
+    content: none !important
+}
+
+.meet-slider .slick-next {
+    right: -8px !important
+}
+
+.meet-slider .slick-prev {
+    left: -8px !important
+}
+
+.meet-slider .slick-dots {
+    bottom: -51px !important
+}
+
+.gradiant::after {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%)
+}
+
+.action-slider {
+    margin: 0 -10px
+}
+
+.action-slider .slick-slide {
+    padding: 0 10px
+}
+
+.action-slider .slick-list {
+    padding: 80px 0
+}
+
+@media(max-width: 1280px) {
+    .action-slider .slick-list {
+        padding: 40px 0
+    }
+}
+
+.action-slider .slick-dots {
+    bottom: 0 !important
+}
+
+.business-slider {
+    margin: 0 -10px;
+    margin-bottom: 56px !important
+}
+
+.business-slider .slick-slide {
+    padding: 0 10px
+}
+
+.business-slider .slick-dots {
+    bottom: -60px !important
+}
+
+@media(max-width: 1280px) {
+    .business-slider .slick-dots {
+        bottom: -45px !important
+    }
+}
+
+.business-slider .slick-center .support-text {
+    display: -webkit-box !important
+}
+
+.business-slider .slick-next {
+    right: -8px !important
+}
+
+.business-slider .slick-prev {
+    left: -8px !important
+}
+
+.nav-link.active {
+    color: #8635fd !important;
+    font-weight: 600 !important
+}
+
+.tab-button.active::after {
+    background-color: #8635fd !important
+}
+
+.tab-button.active p {
+    color: #8635fd !important
+}
+
+.slick-dots {
+    bottom: -44px !important
+}
+
+@media(max-width: 1024px) {
+    .slick-dots {
+        bottom: -34px !important
+    }
+}
+
+.slick-dots li {
+    width: 6px !important;
+    height: 6px !important;
+    margin: 0 3px !important
+}
+
+.slick-dots .slick-active {
+    width: 15px !important;
+}
+
+.slick-dots .slick-active button {
+    background-color: #8635fd !important;
+}
+
+.slick-dots button {
+    padding: 0 !important;
+    width: 6px !important;
+    height: 6px !important;
+    background-color: #d0d4d9 !important;
+    border-radius: 20px !important
+}
+
+.slick-dots .slick-active button {
+    width: 15px !important;
+}
+
+.slick-dots button::before {
+    content: none !important
+}
+
+.slick-next,
+.slick-prev {
+    border: 1px solid #fff
+}
+
+.slick-next:hover,
+.slick-prev:hover {
+    border: 1px solid #8635fd;
+    background-color: #fff !important
+}
+
+.slick-next:hover svg path,
+.slick-prev:hover svg path {
+    fill: #8635fd !important;
+    stroke: #8635fd !important
+}
+
+.slick-next svg path,
+.slick-prev svg path {
+    fill: #fff
+}
+
+.slick-next::before,
+.slick-prev::before {
+    content: none !important
+}
+
+.slick-next {
+    right: 0px !important
+}
+
+@media(max-width: 1024px) {
+    .slick-next {
+        right: 8px !important
+    }
+}
+
+@media(max-width: 768px) {
+    .slick-next {
+        right: 10px !important
+    }
+}
+
+.slick-prev {
+    left: 0px !important
+}
+
+@media(max-width: 1024px) {
+    .slick-prev {
+        left: 8px !important
+    }
+}
+
+@media(max-width: 768px) {
+    .slick-prev {
+        left: 10px !important
+    }
+}
+
+.d-none {
+    display: none;
+}
+
+.text-editor ul {
+    list-style: disc;
+    padding-left: 40px;
+    margin-block: 15px;
+}
+
+.text-editor b,
+.text-editor strong {
+    font-weight: 600;
+    color: #8b8585;
+}
+
+.accordion-open .accordion-header span.font-medium {
+    font-weight: 700 !important;
+}
+
+.pricing-plan-section .section-heading {
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-plan-section .section-heading h2 {
+    position: relative;
+}
+
+.pricing-plan-section .section-heading h2:after {
+    background-color: #7638f9;
+    border-radius: 2px;
+    bottom: -4px;
+    content: "";
+    height: 2px;
+    left: 6%;
+    position: absolute;
+    width: 33%;
+}
+
+.pricing-plan-section .pricing-slider .slick-list {
+    padding: 0 !important;
+    margin: 0;
+}
+
+.pricing-plan-section .pricing-slider .pricing-card {
+    max-width: 400px;
+    margin: 0px 20px;
+    border: 1px solid #d8d8d8;
+    border-radius: 42px;
+    box-shadow: 1px 6px 10px 0px rgba(0, 0, 0, 0.1);
+    animation: slideInFromTop 0.5s ease-out;
+    position: relative;
+}
+
+@keyframes slideInFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pricing-plan-section .pricing-slider .pricing-card {
+    margin: 0 15px;
+    margin-bottom: 10px;
+}
+
+.pricing-plan-section .container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .pricing-plan-section .pricing-slider .pricing-card {
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 575px) {
+    .pricing-plan-section .pricing-slider .pricing-card {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 460px) {
+    .pricing-plan-section .pricing-slider .pricing-card {
+        margin: 0 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.pricing-plan-section .pricing-slider .pricing-card .card-title {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+@media (max-width: 575px) {
+    .pricing-plan-section .pricing-slider .pricing-card .card-title {
+        font-size: 24px;
+    }
+}
+
+.pricing-plan-section .pricing-slider .pricing-card .price {
+    font-size: 29px;
+    font-weight: 600;
+}
+
+.pricing-plan-section .pricing-slider .pricing-card .pricing-plan-list {
+    height: 100%;
+    margin-top: 15px;
+}
+
+.pricing-plan-section .pricing-slider .pricing-card .pricing-plan-list li {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 575px) {
+    .pricing-plan-section .pricing-slider .pricing-card .pricing-plan-list li {
+        font-size: 15px;
+    }
+}
+
+.pricing-plan-section .pricing-slider .pricing-card .pricing-plan-list li:last-child {
+    margin-bottom: 0;
+}
+
+.pricing-plan-section .pricing-slider .pricing-card .pricing-plan-list li.active-check .check-box {
+    color: #8635fd;
+    font-size: 18px !important;
+}
+
+@media (max-width: 575px) {
+    .pricing-plan-section .pricing-slider .pricing-card .pricing-plan-list li.active-check .check-box {
+        font-size: 16px !important;
+    }
+}
+
+.pricing-plan-section .pricing-slider .pricing-card .pricing-plan-list li.unactive-check {
+    color: #818181;
+}
+
+.pricing-plan-section .pricing-slider .pricing-card .pricing-plan-list li.unactive-check .check-box {
+    color: #818181;
+    font-size: 18px !important;
+}
+
+@media (max-width: 575px) {
+    .pricing-plan-section .pricing-slider .pricing-card .pricing-plan-list li.unactive-check .check-box {
+        font-size: 16px !important;
+    }
+}
+
+.pricing-plan-section .pricing-slider .pricing-card .pricing-plan-list .check-box {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 14px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+@media (max-width: 575px) {
+    .pricing-plan-section .pricing-slider .pricing-card .pricing-plan-list .check-box {
+        margin-right: 15px;
+    }
+}
+
+.pricing-plan-section .pricing-slider .pricing-card .btn-gray {
+    font-size: 20px;
+    max-width: 240px;
+    height: 60px;
+    width: 100%;
+}
+
+.pricing-plan-section .pricing-slider .pricing-card .trial-plan-lable {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    padding-right: 0px !important;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.pricing-plan-section .pricing-slider .pricing-card .trial-plan-lable span {
+    background-color: #3f3d5a;
+    border-radius: 0px 42px 0px 42px;
+    color: white;
+}
+
+.pricing-plan-section .pricing-slider .pricing-card .pricing-card-body {
+    padding: 30px !important;
+}
+
+.pricing-plan-section .pricing-slider .slick-current .pricing-card {
+    border: 2px solid #f3f3ff;
+    background-color: #f3f3ff;
+}
+
+.pricing-plan-section .pricing-slider .slick-current .pricing-card .card-title {
+    color: #000000 !important;
+}
+
+.pricing-plan-section .pricing-slider .slick-current .pricing-card .price {
+    color: #8635fd;
+}
+
+.pricing-plan-section .pricing-slider .slick-current .pricing-card .btn-gray {
+    background-color: #8635fd;
+    color: #ffffff;
+}
+
+.pricing-plan-section .pricing-slider .slick-dots {
+    position: relative !important;
+    bottom: -30px !important;
+}
+
+.pricing-plan-section .pricing-slider .slick-dots li button {
+    background-color: #d8d8d8 !important;
+}
+
+.pricing-plan-section .pricing-slider .slick-dots li.slick-active button {
+    background-color: #8635fd !important;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: #8635fd;
+    border: none;
+    padding: 8px 15px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.pricing-plan-section .pricing-card-body .btn.btn-primary {
+    color: #ffffff;
+    background-color: #8635fd;
+}
+
+.pricing-plan-section .pricing-card-body .btn.btn-success {
+    color: #ffffff;
+    background-color: #349633;
+}
+
+.line-clamp-8 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8;
+}

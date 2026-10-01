@@ -1,0 +1,214 @@
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+    src: url("../fonts/Poppins-Medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+    src: url("../fonts/Poppins-SemiBold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+    src: url("../fonts/Poppins-Bold.ttf") format("truetype");
+}
+.accordion-open {
+    box-shadow: 0px 10px 24px 0px #8635fd1a !important;
+    .accordion-header {
+        padding-bottom: 16px !important;
+        span {
+            color: #111111 !important;
+        }
+    }
+}
+.meet-slider {
+    margin-bottom: 46px !important;
+    @media (max-width: 1024px) {
+        margin-bottom: 30px !important;
+    }
+    margin: 0 -10px;
+
+    .slick-slide {
+        padding: 0 10px;
+    }
+    .slick-next,
+    .slick-prev {
+        top: 44%;
+        border: 1px solid #8635fd;
+        &:hover {
+            border: 1px solid #8635fd;
+            background-color: white !important;
+            svg {
+                path {
+                    fill: #8635fd !important;
+                    stroke: #8635fd !important;
+                }
+            }
+        }
+        svg {
+            width: 12px;
+            height: 20px;
+            path {
+                fill: white;
+            }
+        }
+        &::before {
+            content: none !important;
+        }
+    }
+    .slick-next {
+        right: -8px !important;
+    }
+    .slick-prev {
+        left: -8px !important;
+    }
+    .slick-dots {
+        bottom: -51px !important;
+    }
+}
+.gradiant {
+    &::after {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+    }
+}
+.action-slider {
+    margin: 0 -10px;
+    .slick-slide {
+        padding: 0 10px;
+    }
+    .slick-list {
+        padding: 80px 0;
+        @media (max-width: 1280px) {
+            padding: 40px 0;
+        }
+    }
+    .slick-dots {
+        bottom: 0 !important;
+    }
+}
+.business-slider {
+    margin: 0 -10px;
+    margin-bottom: 56px !important;
+    .slick-slide {
+        padding: 0 10px;
+    }
+    .slick-dots {
+        bottom: -60px !important;
+        @media (max-width: 1280px) {
+            bottom: -45px !important;
+        }
+    }
+    .slick-center {
+        .support-text {
+            display: -webkit-box !important;
+        }
+    }
+
+    .slick-next {
+        right: -8px !important;
+    }
+    .slick-prev {
+        left: -8px !important;
+    }
+}
+.nav-link {
+    &.active {
+        color: #8635fd !important;
+        font-weight: 600 !important;
+    }
+}
+.tab-button {
+    &.active {
+        &::after {
+            background-color: #8635fd !important;
+        }
+        p {
+            color: #8635fd !important;
+        }
+    }
+}
+.slick-dots {
+    bottom: -44px !important;
+    @media (max-width: 1024px) {
+        bottom: -34px !important;
+    }
+    li {
+        width: 6px !important;
+        height: 6px !important;
+        margin: 0 3px !important;
+    }
+    .slick-active {
+        width: 20px !important;
+        button {
+            background-color: #8635fd !important;
+            width: 20px !important;
+            border-radius: 10px !important;
+        }
+    }
+    button {
+        padding: 0 !important;
+        width: 6px !important;
+        height: 6px !important;
+        background-color: #d0d4d9 !important;
+        border-radius: 50% !important;
+        &::before {
+            content: none !important;
+        }
+    }
+}
+.slick-next,
+.slick-prev {
+    border: 1px solid white;
+    &:hover {
+        border: 1px solid #8635fd;
+        background-color: white !important;
+        svg {
+            path {
+                fill: #8635fd !important;
+                stroke: #8635fd !important;
+            }
+        }
+    }
+    svg {
+        // width: 12px;
+        // height: 20px;
+        path {
+            fill: white;
+        }
+    }
+    &::before {
+        content: none !important;
+    }
+}
+.slick-next {
+    right: 0px !important;
+    @media (max-width: 1024px) {
+        right: 8px !important;
+    }
+    @media (max-width: 768px) {
+        right: 10px !important;
+    }
+}
+.slick-prev {
+    left: 0px !important;
+    @media (max-width: 1024px) {
+        left: 8px !important;
+    }
+    @media (max-width: 768px) {
+        left: 10px !important;
+    }
+}
