@@ -52,3 +52,42 @@ jobs:
 
       - name: Run Laravel tests
         run: php artisan test
+  deploy:
+    name: Deploy to Production
+    needs: test
+
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to Hostinger
+        uses: appleboy/ssh-action@v1.2.5
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          port: ${{ secrets.SSH_PORT }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+          script: |
+            set -e
+
+            cd "${{ secrets.DEPLOY_PATH }}"
+
+            echo "Pull latest code"
+            git pull origin main
+
+            echo "Install production dependencies"
+            composer install --no-dev --no-interaction --prefer-dist --optimize-autoloader
+
+            echo "Clear Laravel cache"
+            php artisan optimize:clear
+
+            echo "Run database migrations"
+            php artisan migrate --force
+
+            echo "Build production cache"
+            php artisan config:cache
+            php artisan view:cache
+
+            echo "Deployment completed"
